@@ -9,6 +9,7 @@ function loadArtists() {
             artists.forEach(artist => {
                 const parentRow = document.createElement("div");
                 parentRow.className = "row row-cols-1 mb-5"
+                parentRow.id = artist.name.toLowerCase().replace(/\s/g, "-");
 
                 const card = document.createElement("div");
                 card.className = "card shadow-sm";
