@@ -6,7 +6,10 @@
         "style": "Renaissance",
         "image": "./images/artists/daVinci.jpg",
         "sampleWorks": [
-            
+            { "image": "./images/artworks/mona_lisa.jpg", "alt": "Mona Lisa" },
+            { "image": "./images/artworks/last_supper.jpg", "alt": "The Last Supper" },
+            { "image": "./images/artworks/vitruvian_man.jpg", "alt": "Vitruvian Man" },
+            { "image": "./images/artworks/ginevra.jpg", "alt": "Ginevra de' Benci" }
         ],
         "bio": "Leonardo da Vinci was an Italian painter, draftsman, sculptor, architect, and engineer whose genius, perhaps more than that of any other figure, epitomized the Renaissance humanist ideal. His Last Supper (1495–98) and Mona Lisa (c. 1503–19) are among the most widely popular and influential paintings of the Renaissance. His notebooks reveal a spirit of scientific inquiry and a mechanical inventiveness that were centuries ahead of his time."
     },
@@ -17,7 +20,10 @@
         "style": "Post-Impressionism",
         "image": "./images/artists/vanGogh.jpg",
         "sampleWorks": [
-            
+            { "image": "./images/artworks/starry_night.jpg", "alt": "Starry Night" },
+            { "image": "./images/artworks/sunflowers.jpg", "alt": "Sunflowers" },
+            { "image": "./images/artworks/irises.jpg", "alt": "Irises" },
+            { "image": "./images/artworks/wheatfield_with_crows.jpg", "alt": "Wheatfield with Crows" }
         ],
         "bio": "Vincent van Gogh was a Dutch painter, generally considered the greatest after Rembrandt, and one of the greatest of the Post-Impressionists. The striking color, emphatic brushwork, and contoured forms of his work powerfully influenced the current of Expressionism in modern art. Van Gogh’s art became astoundingly popular after his death, especially in the late 20th century, when his work sold for record-breaking sums at auctions around the world and was featured in blockbuster touring exhibitions."
     },
@@ -28,7 +34,10 @@
         "style": "Cubism",
         "image": "./images/artists/picasso.jpg",
         "sampleWorks": [
-            
+            { "image": "./images/artworks/guernica.jpg", "alt": "Guernica" },
+            { "image": "./images/artworks/les_demoiselles_d_avignon.jpg", "alt": "Les Demoiselles d'Avignon" },
+            { "image": "./images/artworks/the_weeping_woman.jpg", "alt": "The Weeping Woman" },
+            { "image": "./images/artworks/girl_before_a_mirror.jpg", "alt": "Girl Before a Mirror" }
         ],
         "bio": "Pablo Picasso was a Spanish expatriate painter, sculptor, printmaker, ceramicist, and stage designer, one of the greatest and most influential artists of the 20th century and the creator (with Georges Braque) of Cubism. Picasso’s works are often categorized into periods. While the names of many of his later periods are debated, the most commonly accepted periods in his work are the Blue Period (1901–04), the Rose Period (1904–06), the African-influenced Period (1907–09), Analytic Cubism (1909–12), and Synthetic Cubism (1912–19)."
     },
@@ -39,7 +48,10 @@
         "style": "Impressionism",
         "image": "./images/artists/monet.jpg",
         "sampleWorks": [
-            
+            { "image": "./images/artworks/water_lilies.jpg", "alt": "Water Lilies" },
+            { "image": "./images/artworks/impression_sunrise.jpg", "alt": "Impression, Sunrise" },
+            { "image": "./images/artworks/rouen_cathedral.jpg", "alt": "Rouen Cathedral" },
+            { "image": "./images/artworks/japanese_bridge.jpg", "alt": "The Japanese Bridge" }
         ],
         "bio": "Claude Monet was a French painter who was the initiator, leader, and unswerving advocate of the Impressionist style. In his mature works, Monet developed his method of producing repeated studies of the same motif in series, changing canvases with the light or as his interest shifted. These series were frequently exhibited in groups—for example, his images of haystacks (1890/91) and the Rouen cathedral (1894)."
     }

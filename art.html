@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Cooper McKee and Dylan Longlett">
     <meta name="generator" content="Hugo 0.122.0">
-    <title>Find Art</title>
+    <title>Art Gallery - Artworks</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -21,8 +21,16 @@
             justify-content: flex-end;
             gap: 30px;
         }
+        .sample-work {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .artwork-card {
+            margin-bottom: 30px;
+        }
     </style>
-
 </head>
 
 <body>
@@ -33,96 +41,20 @@
                     <strong>State Art</strong>
                 </a>
                 <div class="button-container">
-                    <a href="./index.html" class="btn btn-dark">
-                        <span>Home</span>
-                    </a>
-                    <a href="./author.html" class="btn btn-dark">
-                        <span>Authors</span>
-                    </a>
-                   
-                    <a href="./art.html" class="btn btn-dark">
-                        <span>Art</span>
-                    </a>
-                    <a href="./artists.html" class="btn btn-dark">
-                        <span>Artists</span>
-                    </a>
+                    <a href="./index.html" class="btn btn-dark">Home</a>
+                    <a href="./author.html" class="btn btn-dark">Authors</a>
+                    <a href="./art.html" class="btn btn-dark">Art</a>
+                    <a href="./artists.html" class="btn btn-dark">Artists</a>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="album py-5 bg-body-tertiary">
+        <div id="art-container" class="album py-5 bg-body-tertiary">
             <div class="container">
-                <h2 class="text-center mb-4">Car Stock</h2>
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/cars/white_landrover.jpg" alt="White Landrover">
-                            <div class="card-body">
-                                <p class="card-text">Bold and adventurous, this white Land Rover is ready for anything.
-                                    Its rugged design paired with
-                                    luxurious interiors makes it the ideal vehicle for those who love to explore off the
-                                    beaten path in style.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/cars/blue_audi.jpg" alt="Blue Audi">
-                            <div class="card-body">
-                                <p class="card-text">Sleek, sophisticated, and dynamic, this blue Audi combines luxury
-                                    with performance. Its bold design
-                                    and cutting-edge technology make it the perfect choice for those seeking refinement
-                                    and power on the road.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/cars/blue_bmw.jpg" alt="Blue BMW">
-                            <div class="card-body">
-                                <p class="card-text">Experience driving pleasure with this sporty blue BMW. Renowned for
-                                    its precise handling and
-                                    powerful performance, this model delivers a blend of elegance and innovation,
-                                    ensuring an exhilarating ride every time.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/cars/blue_ferrari.jpg" alt="Blue Ferrari">
-                            <div class="card-body">
-                                <p class="card-text">The epitome of speed, this blue Ferrari is a masterpiece of Italian
-                                    engineering. With its
-                                    aggressive design and high-performance engine, it offers a thrilling driving
-                                    experience for those who demand the best.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/cars/blue_mercedes.jpg" alt="Blue Mercedes">
-                            <div class="card-body">
-                                <p class="card-text">This striking blue Mercedes-Benz exudes class and performance.
-                                    Combining luxury with cutting-edge technology,
-                                    it provides an unparalleled driving experience that redefines comfort and control on
-                                    the road.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/cars/gray_volkswagen.jpg" alt="Gray Volkswagen">
-                            <div class="card-body">
-                                <p class="card-text">Reliable, versatile, and stylish, this gray Volkswagen offers the
-                                    perfect balance of comfort and practicality.
-                                    With its sleek design and robust features, it’s built for both everyday driving and
-                                    long road trips.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" id="art-list">
+                    <!-- Artworks will be dynamically generated here -->
                 </div>
             </div>
         </div>
@@ -130,10 +62,51 @@
 
     <footer class="text-body-secondary py-5">
         <div class="container">
-            <p class="mb-1">Template design inspired by Bootstrap (https://getbootstrap.com). Licensed under MIT
-                (https://opensource.org/licenses/MIT).</p>
         </div>
     </footer>
+
+    <script>
+        async function loadArtworks() {
+            try {
+                console.log('Attempting to load artist data...');
+                const response = await fetch('json/artists.json');
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const artists = await response.json();
+                console.log('Artist data loaded:', artists);
+
+                const artList = document.getElementById('art-list');
+
+                artists.forEach(artist => {
+                    artist.sampleWorks.forEach(work => {
+                        const colDiv = document.createElement('div');
+                        colDiv.classList.add('col-md-6', 'artwork-card');
+
+                        const cardDiv = document.createElement('div');
+                        cardDiv.classList.add('card', 'shadow-sm');
+
+                        const workImg = document.createElement('img');
+                        workImg.src = work.image;
+                        workImg.alt = work.alt;
+                        workImg.classList.add('sample-work');
+
+                        // Assemble the card structure
+                        cardDiv.appendChild(workImg);
+                        colDiv.appendChild(cardDiv);
+                        artList.appendChild(colDiv);
+                    });
+                });
+            } catch (error) {
+                console.error('Error loading artist data:', error);
+            }
+        }
+
+        // Call the function to load artworks when the page loads
+        document.addEventListener('DOMContentLoaded', loadArtworks);
+    </script>
 </body>
 
 </html>
