@@ -1,0 +1,46 @@
+[
+    {
+        "name": "Leonardo da Vinci",
+        "born": "April 15, 1452",
+        "died": "May 2, 1519",
+        "style": "Renaissance",
+        "image": "./images/artists/daVinci.jpg",
+        "sampleWorks": [
+            
+        ],
+        "bio": "Leonardo da Vinci was an Italian painter, draftsman, sculptor, architect, and engineer whose genius, perhaps more than that of any other figure, epitomized the Renaissance humanist ideal. His Last Supper (1495–98) and Mona Lisa (c. 1503–19) are among the most widely popular and influential paintings of the Renaissance. His notebooks reveal a spirit of scientific inquiry and a mechanical inventiveness that were centuries ahead of his time."
+    },
+    {
+        "name": "Vincent van Gogh",
+        "born": "March 30, 1853",
+        "died": "July 29, 1890",
+        "style": "Post-Impressionism",
+        "image": "./images/artists/vanGogh.jpg",
+        "sampleWorks": [
+            
+        ],
+        "bio": "Vincent van Gogh was a Dutch painter, generally considered the greatest after Rembrandt, and one of the greatest of the Post-Impressionists. The striking color, emphatic brushwork, and contoured forms of his work powerfully influenced the current of Expressionism in modern art. Van Gogh’s art became astoundingly popular after his death, especially in the late 20th century, when his work sold for record-breaking sums at auctions around the world and was featured in blockbuster touring exhibitions."
+    },
+    {
+        "name": "Pablo Picasso",
+        "born": "October 25, 1881",
+        "died": "April 8, 1973",
+        "style": "Cubism",
+        "image": "./images/artists/picasso.jpg",
+        "sampleWorks": [
+            
+        ],
+        "bio": "Pablo Picasso was a Spanish expatriate painter, sculptor, printmaker, ceramicist, and stage designer, one of the greatest and most influential artists of the 20th century and the creator (with Georges Braque) of Cubism. Picasso’s works are often categorized into periods. While the names of many of his later periods are debated, the most commonly accepted periods in his work are the Blue Period (1901–04), the Rose Period (1904–06), the African-influenced Period (1907–09), Analytic Cubism (1909–12), and Synthetic Cubism (1912–19)."
+    },
+    {
+        "name": "Claude Monet",
+        "born": "November 14, 1840",
+        "died": "December 5, 1926",
+        "style": "Impressionism",
+        "image": "./images/artists/monet.jpg",
+        "sampleWorks": [
+            
+        ],
+        "bio": "Claude Monet was a French painter who was the initiator, leader, and unswerving advocate of the Impressionist style. In his mature works, Monet developed his method of producing repeated studies of the same motif in series, changing canvases with the light or as his interest shifted. These series were frequently exhibited in groups—for example, his images of haystacks (1890/91) and the Rouen cathedral (1894)."
+    }
+]
