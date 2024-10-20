@@ -4,15 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Art Gallery">
     <meta name="author" content="Cooper McKee and Dylan Longlett">
-    <meta name="generator" content="Hugo 0.122.0">
     <link rel="icon" href="/images/paintbrush.png" type="image/png">
 
     <title>Art Gallery - Artists</title>
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Optional Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -23,17 +25,20 @@
             justify-content: flex-end;
             gap: 30px;
         }
+
         .artist-picture {
             width: 300px;
             height: 300px;
             object-fit: scale-down;
         }
+
         .sample-work {
             width: 100%;
             height: 200px;
             object-fit: cover;
             margin-bottom: 10px;
         }
+
         .artist-card {
             margin-bottom: 30px;
         }
@@ -41,6 +46,7 @@
 </head>
 
 <body>
+    <!-- Header / Navbar -->
     <header data-bs-theme="dark">
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container">
@@ -57,155 +63,26 @@
         </div>
     </header>
 
+    <!-- Main Content: Artists will be loaded here -->
     <main>
-       <div id="artists-container" class="album py-5 bg-body-tertiary"> 
+        <div id="artists-container" class="album py-5 bg-body-tertiary">
             <div class="container">
                 <div class="row">
-                    <!-- Artist Card: Leonardo Da Vinci -->
-                    <div class="col-md-6 artist-card">
-                        <div class="card shadow-sm">
-                            <div class="row">
-                                <div class="col text-center">
-                                    <h2 id="DaVinci" class="mb-3">Leonardo Da Vinci</h2>
-                                    <img src="./images/artists/daVinci.jpg" alt="Da Vinci" class="artist-picture mb-3">
-                                    <div class="col text-left px-4">
-                                        <p><strong>Born:</strong> April 15, 1452</p>
-                                        <p><strong>Died:</strong> May 2, 1519</p>
-                                        <p><strong>Style:</strong> High Renaissance</p>
-                                    </div>
-                                </div>
-                                <div class="col px-4">
-                                    <h5>Sample Works:</h5>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="./images/artworks/mona_lisa.jpg" alt="Mona Lisa" class="sample-work">
-                                        </div>
-                            
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h5>Biography:</h5>
-                                <p class="card-text">
-                                    Leonardo da Vinci was an Italian artist, scientist, and inventor known for his iconic paintings,
-                                    such as the Mona Lisa and The Last Supper. He was a key figure of the Italian Renaissance,
-                                    celebrated for his artistic talent, scientific curiosity, and innovative ideas.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Artist Card: Pablo Picasso -->
-                    <div class="col-md-6 artist-card">
-                        <div class="card shadow-sm">
-                            <div class="row">
-                                <div class="col text-center">
-                                    <h2 id="Picasso" class="mb-3">Pablo Picasso</h2>
-                                    <img src="./images/artists/picasso.jpg" alt="Picasso" class="artist-picture mb-3">
-                                    <div class="col text-left px-4">
-                                        <p><strong>Born:</strong> October 25, 1881</p>
-                                        <p><strong>Died:</strong> April 8, 1973</p>
-                                        <p><strong>Style:</strong> Cubism</p>
-                                    </div>
-                                </div>
-                                <div class="col px-4">
-                                    <h5>Sample Works:</h5>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="./images/artworks/guernica.jpg" alt="Guernica" class="sample-work">
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h5>Biography:</h5>
-                                <p class="card-text">
-                                    Pablo Picasso was a Spanish painter, sculptor, and one of the most influential artists of the 20th century,
-                                    co-founding the Cubist movement and contributing to Symbolism and Surrealism.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Artist Card: Vincent Van Gogh -->
-                    <div class="col-md-6 artist-card">
-                        <div class="card shadow-sm">
-                            <div class="row">
-                                <div class="col text-center">
-                                    <h2 id="VanGogh" class="mb-3">Vincent Van Gogh</h2>
-                                    <img src="./images/artists/vanGogh.jpg" alt="Van Gogh" class="artist-picture mb-3">
-                                    <div class="col text-left px-4">
-                                        <p><strong>Born:</strong> March 30, 1853</p>
-                                        <p><strong>Died:</strong> July 29, 1890</p>
-                                        <p><strong>Style:</strong> Post-Impressionism</p>
-                                    </div>
-                                </div>
-                                <div class="col px-4">
-                                    <h5>Sample Works:</h5>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="./images/artworks/starry_night.jpg" alt="Starry Night" class="sample-work">
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h5>Biography:</h5>
-                                <p class="card-text">
-                                    Vincent Van Gogh was a Dutch post-impressionist painter who is among the most famous and
-                                    influential figures in the history of Western art, known for his vivid colors and emotional
-                                    honesty.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Artist Card: Claude Monet -->
-                    <div class="col-md-6 artist-card">
-                        <div class="card shadow-sm">
-                            <div class="row">
-                                <div class="col text-center">
-                                    <h2 id="Monet" class="mb-3">Claude Monet</h2>
-                                    <img src="./images/artists/monet.jpg" alt="Monet" class="artist-picture mb-3">
-                                    <div class="col text-left px-4">
-                                        <p><strong>Born:</strong> November 14, 1840</p>
-                                        <p><strong>Died:</strong> December 5, 1926</p>
-                                        <p><strong>Style:</strong> Impressionism</p>
-                                    </div>
-                                </div>
-                                <div class="col px-4">
-                                    <h5>Sample Works:</h5>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="./images/artworks/water_lilies.jpg" alt="Water Lilies" class="sample-work">
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h5>Biography:</h5>
-                                <p class="card-text">
-                                    Claude Monet was a French painter and a founder of French Impressionist painting,
-                                    whose emphasis on the effects of light and color were a key element in the development of
-                                    modern art.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Artist cards will be dynamically inserted here by JavaScript -->
                 </div>
             </div>
         </div>
-        <!-- <script src="./js/populateArtists.js"></script>    prints it all again? -->
     </main>
 
+    <!-- Footer -->
     <footer class="text-body-secondary py-5">
         <div class="container">
-           
+            <p>&copy; 2024 State Art. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src=".\js\artists.js"></script>
 </body>
 
 </html>
