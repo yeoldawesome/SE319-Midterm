@@ -6,12 +6,12 @@
         "style": "Renaissance",
         "image": "./images/artists/daVinci.jpg",
         "sampleWorks": [
-            { "image": "./images/artworks/mona_lisa.jpg", "alt": "Mona Lisa" },
-            { "image": "./images/artworks/last_supper.jpg", "alt": "The Last Supper" },
-            { "image": "./images/artworks/vitruvian_man.jpg", "alt": "Vitruvian Man" },
-            { "image": "./images/artworks/ginevra.jpg", "alt": "Ginevra de' Benci" }
+            { "image": "./images/artworks/mona_lisa.jpg", "alt": "Mona Lisa", "description": "A portrait of a woman, widely regarded as the most famous painting in the world." },
+            { "image": "./images/artworks/last_supper.jpg", "alt": "The Last Supper", "description": "Depicts Jesus and his disciples at the Last Supper." },
+            { "image": "./images/artworks/vitruvian_man.jpg", "alt": "Vitruvian Man", "description": "A drawing of a man in two superimposed positions with his arms and legs apart." },
+            { "image": "./images/artworks/ginevra.jpg", "alt": "Ginevra de' Benci", "description": "A portrait of a young woman, likely Ginevra de' Benci." }
         ],
-        "bio": "Leonardo da Vinci was an Italian painter, draftsman, sculptor, architect, and engineer whose genius, perhaps more than that of any other figure, epitomized the Renaissance humanist ideal. His Last Supper (1495–98) and Mona Lisa (c. 1503–19) are among the most widely popular and influential paintings of the Renaissance. His notebooks reveal a spirit of scientific inquiry and a mechanical inventiveness that were centuries ahead of his time."
+        "bio": "Leonardo da Vinci was an Italian painter, draftsman, sculptor, architect, and engineer whose genius epitomized the Renaissance humanist ideal."
     },
     {
         "name": "Vincent van Gogh",
@@ -20,12 +20,11 @@
         "style": "Post-Impressionism",
         "image": "./images/artists/vanGogh.jpg",
         "sampleWorks": [
-            { "image": "./images/artworks/starry_night.jpg", "alt": "Starry Night" },
-            { "image": "./images/artworks/sunflowers.jpg", "alt": "Sunflowers" },
-            { "image": "./images/artworks/irises.jpg", "alt": "Irises" },
-            { "image": "./images/artworks/wheatfield_with_crows.jpg", "alt": "Wheatfield with Crows" }
+            { "image": "./images/artworks/starry_night.jpg", "alt": "Starry Night", "description": "A swirling depiction of a night sky filled with stars." },
+            { "image": "./images/artworks/sunflowers.jpg", "alt": "Sunflowers", "description": "A series of paintings featuring vibrant yellow sunflowers." },
+            { "image": "./images/artworks/irises.jpg", "alt": "Irises", "description": "A painting of vibrant blue irises with a single white iris." }
         ],
-        "bio": "Vincent van Gogh was a Dutch painter, generally considered the greatest after Rembrandt, and one of the greatest of the Post-Impressionists. The striking color, emphatic brushwork, and contoured forms of his work powerfully influenced the current of Expressionism in modern art. Van Gogh’s art became astoundingly popular after his death, especially in the late 20th century, when his work sold for record-breaking sums at auctions around the world and was featured in blockbuster touring exhibitions."
+        "bio": "Vincent van Gogh was a Dutch painter, known for his bold colors and emotional depth in paintings."
     },
     {
         "name": "Pablo Picasso",
@@ -34,12 +33,12 @@
         "style": "Cubism",
         "image": "./images/artists/picasso.jpg",
         "sampleWorks": [
-            { "image": "./images/artworks/guernica.jpg", "alt": "Guernica" },
-            { "image": "./images/artworks/les_demoiselles_d_avignon.jpg", "alt": "Les Demoiselles d'Avignon" },
-            { "image": "./images/artworks/the_weeping_woman.jpg", "alt": "The Weeping Woman" },
-            { "image": "./images/artworks/girl_before_a_mirror.jpg", "alt": "Girl Before a Mirror" }
+            { "image": "./images/artworks/guernica.jpg", "alt": "Guernica", "description": "A large mural depicting the horrors of war." },
+            { "image": "./images/artworks/les_demoiselles_d_avignon.jpg", "alt": "Les Demoiselles d'Avignon", "description": "A controversial painting of five nude women with disjointed body shapes." },
+            { "image": "./images/artworks/the_weeping_woman.jpg", "alt": "The Weeping Woman", "description": "A powerful portrayal of a woman in distress." },
+            { "image": "./images/artworks/girl_before_a_mirror.jpg", "alt": "Girl Before a Mirror", "description": "A young woman looking at her reflection in the mirror." }
         ],
-        "bio": "Pablo Picasso was a Spanish expatriate painter, sculptor, printmaker, ceramicist, and stage designer, one of the greatest and most influential artists of the 20th century and the creator (with Georges Braque) of Cubism. Picasso’s works are often categorized into periods. While the names of many of his later periods are debated, the most commonly accepted periods in his work are the Blue Period (1901–04), the Rose Period (1904–06), the African-influenced Period (1907–09), Analytic Cubism (1909–12), and Synthetic Cubism (1912–19)."
+        "bio": "Pablo Picasso was a Spanish artist and one of the most influential figures in 20th-century art, co-founding the Cubist movement."
     },
     {
         "name": "Claude Monet",
@@ -48,11 +47,11 @@
         "style": "Impressionism",
         "image": "./images/artists/monet.jpg",
         "sampleWorks": [
-            { "image": "./images/artworks/water_lilies.jpg", "alt": "Water Lilies" },
-            { "image": "./images/artworks/impression_sunrise.jpg", "alt": "Impression, Sunrise" },
-            { "image": "./images/artworks/rouen_cathedral.jpg", "alt": "Rouen Cathedral" },
-            { "image": "./images/artworks/japanese_bridge.jpg", "alt": "The Japanese Bridge" }
+            { "image": "./images/artworks/water_lilies.jpg", "alt": "Water Lilies", "description": "Part of a series depicting Monet's flower garden at Giverny." },
+            { "image": "./images/artworks/impression_sunrise.jpg", "alt": "Impression, Sunrise", "description": "The painting that gave rise to the name of the Impressionist movement." },
+            { "image": "./images/artworks/rouen_cathedral.jpg", "alt": "Rouen Cathedral", "description": "A series of paintings of the facade of Rouen Cathedral under different light conditions." },
+            { "image": "./images/artworks/japanese_bridge.jpg", "alt": "The Japanese Bridge", "description": "A painting of a footbridge in Monet's water garden in Giverny." }
         ],
-        "bio": "Claude Monet was a French painter who was the initiator, leader, and unswerving advocate of the Impressionist style. In his mature works, Monet developed his method of producing repeated studies of the same motif in series, changing canvases with the light or as his interest shifted. These series were frequently exhibited in groups—for example, his images of haystacks (1890/91) and the Rouen cathedral (1894)."
+        "bio": "Claude Monet was a French painter, a founder of the Impressionist movement, famous for his landscape and nature paintings."
     }
 ]
