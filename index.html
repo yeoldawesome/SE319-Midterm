@@ -29,9 +29,9 @@
 
         /* Custom style for carousel images */
         .carousel-item img {
-            height: 400px; /* Set a fixed height */
-            object-fit: cover; /* Cover the area while preserving aspect ratio */
-            width: 100%; /* Ensure it spans the full width */
+            height: 400px;
+            object-fit: cover;
+            width: 100%;
         }
     </style>
 </head>
@@ -50,7 +50,6 @@
                     <a href="./author.html" class="btn btn-dark">
                         <span>Authors</span>
                     </a>
-                   
                     <a href="./art.html" class="btn btn-dark">
                         <span>Art</span>
                     </a>
@@ -70,15 +69,7 @@
                 <div class="card shadow-sm">
                     <div id="featuredArtCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <!-- <img src="./images/cooper.jpg" alt="Yamaha R1" class="d-block w-100"> -->
-                            </div>
-                            <div class="carousel-item">
-                                <!-- <img src="./images/dylan.jpg" alt="Kawasaki ZX-6R" class="d-block w-100"> -->
-                            </div>
-                            <div class="carousel-item">
-                                <!-- <img src="./images/motorcycles/Kawasaki_Ninja_H2.jpg" alt="Kawasaki Ninja H2" class="d-block w-100"> -->
-                            </div>
+                            <!-- Carousel items will be injected here via JavaScript -->
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#featuredArtCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -107,39 +98,8 @@
         <div class="album py-5 bg-body-tertiary">
             <div class="container">
                 <h2 class="text-center mb-4">Additional Artworks</h2>
-                <div class="row row-cols-2 g-3"> <!-- Adjusted for 2 columns -->
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/motorcycles/CBR_1000_RR.jpg" alt="Honda CBR1000RR" class="card-img-top">
-                            <div class="card-body">
-                                <p class="card-text">Description for Honda CBR1000RR</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/motorcycles/goldwing.jpg" alt="Honda Gold Wing" class="card-img-top">
-                            <div class="card-body">
-                                <p class="card-text">Description for Honda Gold Wing</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/motorcycles/ducatipanigale.jpeg" alt="Ducati Panigale V4" class="card-img-top">
-                            <div class="card-body">
-                                <p class="card-text">Description for Ducati Panigale V4</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img src="./images/motorcycles/goldwing.jpg" alt="Honda Gold Wing" class="card-img-top">
-                            <div class="card-body">
-                                <p class="card-text">Description for Honda Gold Wing</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row row-cols-2 g-3">
+                    <!-- Grid images will be injected here via JavaScript -->
                 </div>
             </div>
         </div>
@@ -151,5 +111,6 @@
         </div>
     </footer>
 </body>
-<script src="./js/indexjs.js"></script> 
+
+<script src="./js/index.js"></script>
 </html>
